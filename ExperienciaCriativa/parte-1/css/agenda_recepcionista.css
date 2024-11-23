@@ -1,0 +1,76 @@
+.agenda-body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-box {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.result-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.result-box a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.result-box a:hover {
+    color: #2980b9;
+}
+
+.message-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.agenda_titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.agenda_titulo p {
+    font-size: 28px; /* Aumentando um pouco o tamanho da fonte */
+    color: #333;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.agenda_titulo p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Mudando a posição inicial para 0 para manter a linha fixa */
+    width: 100%; /* Definindo a largura para 100% para que a linha cubra toda a largura */
+    height: 2px;
+    background-color: #3498db;
+    transition: none; /* Removendo a transição para manter a linha fixa */
+}
+
+.agenda_titulo p:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
